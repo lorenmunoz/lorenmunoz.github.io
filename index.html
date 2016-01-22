@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<style>
+  	  /*.square {
+  	  	width: 700px;
+  	  	height: 500px;
+  	  	border: 1px solid #777;
+  	  	margin: 20px auto;
+  	  }*/
+
+  	  .bag {
+  	  	width: 200px;
+  	  	height: 200px;
+
+  	  }
+
+  	</style>
+  </head>
+  <body>
+  	<header>
+  	</header>
+  	<section>
+  		<img class="bag" src="http://coolspotters.com/files/photos/1014564/louis-vuitton-pochette-new-sobe-logo-clutch-profile.jpg">
+  	</section>
+  	<footer>
+  	</footer>
+  	<script>"https://code.jquery.com/jquery-2.1.4.min.js"</script>	
+    <script>
+    
+      $(document).mousemove(function(e) {
+        $('.bag').offset({
+          left: e.pageX,
+           top: e.pageY + 20
+          });
+       });
+
+
+    </script>	
+  </body>	
+</html>
